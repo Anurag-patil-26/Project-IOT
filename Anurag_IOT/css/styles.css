@@ -1,0 +1,181 @@
+
+ 
+* { box-sizing: border-box; } 
+header, main, nav, footer, figure, figcaption, aside, section, article { display: block; }
+
+body { font-family: Verdana, Arial, sans-serif;
+	background-color:rgb(12, 25, 64);
+	color: #000000;
+	/* background-image: linear-gradient(to right,#90C7E3, #fff); */
+}
+span{
+	color:rgb(12, 25, 64);
+	background-color: #ffff;
+	padding:5px 13px;
+	transition: 0.3s ease-in-out;
+}
+span:hover{
+	color:#fff;
+	background-color: rgb(12, 25, 64);
+	padding:5px 13px;
+}
+ 
+#wrap2per {  width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #7664bf;
+      
+            /* background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3); */
+			border: 1px solid #000033;
+			box-shadow:3px 3px 3px #333333;	
+		} 
+		
+		h2 { font-size: 1.1em; }
+		
+		header { 
+			/* border: 1px solid rgb(230, 150, 32); */
+			background-color: rgb(224, 75, 48);	
+			/* background-image: linear-gradient(to right,rgba(255, 255, 255, 0.8),rgb(0, 12, 102));	 */
+			background:rgb(12, 25, 64);
+			/* background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3); */
+		 background: linear-gradient();
+         /* background-color: rgb(39, 41, 55);	 */
+		 line-height: 300%;
+}
+
+h1 { text-align: center;
+    
+	 font-size: 3em; 
+	 padding: 2% 0;
+	 margin: 1%;
+	 color: rgb(235, 235, 235);
+	 }
+nav { float: left;
+      width: 20%;
+	  font-size: 120%;
+	  padding: 2%;
+	  padding-left: 1%;
+	  font-weight: bold;
+}	  
+nav ul { list-style-type: none;  font-size: 1.0em; }
+nav a { text-decoration: none; line-height: 200%;}
+nav a:link { color: #fff; }
+nav a:visited { color: #f6f6f6; }
+nav a:hover { color: #e4a8a8; }
+
+ 
+#home_p {  	background-image: url(../images/11.jpg);
+			background-repeat: no-repeat;	
+            height: 400px;
+			background-size: 100% 100%;
+			margin-left:20%;				
+}
+
+ 
+#research_p {	background-image: url(../images/IoT_how.jpg);
+			    background-repeat: no-repeat;	
+                height: 385px;
+			    background-size: 100% 100%;
+}
+
+main {  width: 80%;
+        padding-top:1%;
+        padding-right: 3%;
+		padding-left: 3%;
+		padding-bottom: 2%;
+        margin-left: 20%;	
+		border: 1px;
+		background-color: #ffffff;
+		line-height: 200%;
+}
+
+ol, ul {padding-left: 3%; }
+
+ 
+.bottomNav {
+	list-style-type: none;  
+	text-align: center;
+	text-decoration: none;	
+}
+
+footer { text-align: center;
+         font-size: 80%;
+		 font-style: italic;
+		 color: #fff;
+		 padding: 2%;
+	     clear: both; 
+}
+
+
+.reference  { 
+		    display: block;
+		    list-style-type: none;
+		    margin-bottom: 10px;
+		    font-weight: bold;
+		    font-size: 0.9em;		
+}
+
+.back{
+	background-color:#000033;
+	color:#fff;
+	border:none;
+	padding:10px 20px;
+	list-style: none;
+	text-decoration: none;
+}
+ 
+@media only screen and (max-width: 64em){
+	body { margin: 0; 
+	}
+	#wrapper { min-width: 0; 
+	           width: auto; 
+	           box-shadow: none; 
+	           border: none; 
+	}
+    h1 { margin: 0; }
+	main { width: 100%; margin-left: 0; }
+	nav { float: none; 
+	      width: auto; 
+	      margin-top: 0;	
+	      text-align: center;
+		  padding: 0;
+	      padding-top: 0.5em;
+	}
+	nav ul { padding-left: 0; }
+	nav li { display: inline; padding:0.25em 0.75em; }
+	#home_p, #research_p { margin-left: 0; height: 200px; }
+	footer { margin-left: 0; }	
+}
+
+ 	
+@media only screen and (max-width: 37.5em){
+	main { padding:0.1em 1em; 
+        font-size: 90%; 
+    } 
+	ol, ul { padding-left: 1.3em; }
+
+	h1 { font-size: 2em; }
+	nav { padding: 0; }
+	nav li { display: block; 
+	         margin: 0; 
+	        
+	}
+	nav a { display: block; }
+	#home_p, #research_p { display: none; background-image: none; height: 0; }
+}
+
+	
+table, td, th { border: 2px solid black;
+        border-collapse: collapse;	
+		width:100%;		
+		line-height: 100%;
+}
+table caption { text-align: left;}
+
+td, th { padding: 0.5em;}
+
+td { text-align: right; }
+
+.text { text-align: left; }
+
+tr:nth-of-type(odd) { background: #F5FAFC; }
